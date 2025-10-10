@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styled Page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shayoo-Projects/jsDelivr-CDN@main/site/style.css">
+    <!-- Local versions for immediate testing -->
+    <link rel="stylesheet" href="style.css">
+    <script src="theme-toggle.js" defer></script>
+    
+    <!-- CDN versions (uncomment when deployed) -->
+    <!-- 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shayoo-Projects/jsDelivr-CDN@main/site/style.css?v=1.0.1">
+    <script src="https://cdn.jsdelivr.net/gh/Shayoo-Projects/jsDelivr-CDN@main/site/theme-toggle.js?v=1.0.0" defer></script>
+    -->
 </head>
 <body>
     <header>
-        <h1>Welcome to My Page</h1>
+        <div class="header-top">
+            <h1>Welcome to My Page</h1>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" aria-label="Toggle dark mode">
+                    <span class="toggle-icon light-icon">☀️</span>
+                    <span class="toggle-icon dark-icon">🌙</span>
+                </button>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
