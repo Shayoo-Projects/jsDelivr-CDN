@@ -5,10 +5,10 @@
  */
 
 /* Import CSS modules */
-@import url("css/variables.css");
-@import url("css/reset.css");
-@import url("css/typography.css");
-@import url("css/layout.css");
-@import url("css/components.css");
-@import url("css/dashboard.css");
-@import url("css/responsive.css");
+@import url("https://cdn.jsdelivr.net/gh/Shayoo-Projects/jsDelivr-CDN@main/site/css/variables.css");
+@import url("https://cdn.jsdelivr.net/gh/Shayoo-Projects/jsDelivr-CDN@main/site/css/reset.css");
+@import url("https://cdn.jsdelivr.net/gh/Shayoo-Projects/jsDelivr-CDN@main/site/css/typography.css");
+@import url("https://cdn.jsdelivr.net/gh/Shayoo-Projects/jsDelivr-CDN@main/site/css/layout.css");
+@import url("https://cdn.jsdelivr.net/gh/Shayoo-Projects/jsDelivr-CDN@main/site/css/components.css");
+@import url("https://cdn.jsdelivr.net/gh/Shayoo-Projects/jsDelivr-CDN@main/site/css/dashboard.css");
+@import url("https://cdn.jsdelivr.net/gh/Shayoo-Projects/jsDelivr-CDN@main/site/css/responsive.css");
