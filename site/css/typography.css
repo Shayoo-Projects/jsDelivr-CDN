@@ -1,0 +1,50 @@
+/* 
+ * Shayoo-Projects jsDelivr CDN - Typography
+ * Version: 1.0.0
+ * License: MIT
+ */
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-top: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}

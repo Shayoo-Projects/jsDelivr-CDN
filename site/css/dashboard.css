@@ -1,0 +1,112 @@
+/* 
+ * Shayoo-Projects jsDelivr CDN - Dashboard Components
+ * Version: 1.0.0
+ * License: MIT
+ */
+
+/* Modern Dashboard Components */
+
+/* Calendar */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.calendar-day {
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: calc(var(--radius) / 2);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+}
+
+.calendar-day:hover {
+  background-color: var(--muted);
+}
+
+.calendar-day.active {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.calendar-day.highlight-1 {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.calendar-day.highlight-2 {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.calendar-day.highlight-3 {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+/* Chart */
+.chart-container {
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.chart-bar {
+  flex: 1;
+  background-color: var(--primary);
+  border-radius: calc(var(--radius) / 2);
+  transition: height 0.3s ease;
+}
+
+/* Counter */
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.counter-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.counter-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.counter-btn {
+  background-color: var(--muted);
+  color: var(--foreground);
+  border: none;
+  border-radius: calc(var(--radius) / 4);
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.counter-btn:hover {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}

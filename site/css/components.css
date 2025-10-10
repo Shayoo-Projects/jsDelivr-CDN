@@ -1,0 +1,183 @@
+/* 
+ * Shayoo-Projects jsDelivr CDN - Components
+ * Version: 1.0.0
+ * License: MIT
+ */
+
+/* Theme Toggle Styles */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+}
+
+#theme-toggle-btn {
+  background-color: var(--muted);
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  width: 2rem;
+  height: 2rem;
+  border-radius: calc(var(--radius) / 4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+  margin-left: 0.25rem;
+}
+
+#theme-toggle-btn:hover {
+  background-color: var(--muted);
+}
+
+.toggle-icon {
+  position: absolute;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.dark-icon {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.light-icon {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dark .dark-icon {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dark .light-icon {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+/* Card Component */
+.card {
+  background-color: var(--popover);
+  color: var(--popover-foreground);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  margin: 1.25rem 0;
+  border: 1px solid var(--border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: var(--primary);
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-top: 0;
+}
+
+/* Form Elements */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+label {
+  font-weight: 600;
+}
+
+input, textarea {
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--input);
+  border-radius: calc(var(--radius) / 2);
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  width: 100%;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-2xs);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--muted-foreground);
+  opacity: 0.8;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--ring);
+  box-shadow: 0 0 0 2px var(--ring-opacity, rgba(99, 102, 241, 0.2));
+}
+
+/* Button Styles */
+button, [type="submit"] {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: calc(var(--radius) / 2);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+button:hover, [type="submit"]:hover {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
+}
+
+button:active, [type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Modern UI elements */
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stat-card .value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--foreground);
+  line-height: 1;
+}
+
+.stat-card .label {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.stat-card .trend {
+  font-size: 0.875rem;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.trend.positive {
+  color: var(--secondary);
+}
+
+.trend.negative {
+  color: var(--destructive);
+}
